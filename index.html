@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+        <style>
+            .virtualRepeatdemoInfiniteScroll #vertical-container {
+                height: 292px;
+                width: 100%;
+                max-width: 400px; }
+
+            .virtualRepeatdemoInfiniteScroll .repeated-item {
+                border-bottom: 1px solid #ddd;
+                box-sizing: border-box;
+                height: 80px;
+                padding-top: 10px; }
+
+            .virtualRepeatdemoInfiniteScroll md-content {
+                margin: 16px; }
+
+            .virtualRepeatdemoInfiniteScroll md-virtual-repeat-container {
+                border: solid 1px grey; }
+
+            .virtualRepeatdemoInfiniteScroll .md-virtual-repeat-container .md-virtual-repeat-offsetter div {
+                padding-left: 16px; }
+            .event-text {
+                font-size: 10px;
+                margin: auto;
+            }
+
+        </style>
+    </head>
+    <body ng-app="myApp">
+    <div ng-controller="myController as ctrl" ng-cloak="" class="virtualRepeatdemoInfiniteScroll">
+        <md-content layout="column">
+            <p>
+                Display an infinitely growing list of items in a viewport of only 7 rows (height=40px).
+                <br><br>
+                This demo shows scroll and rendering performance gains when using <code>md-virtual-repeat</code>;
+                achieved with the dynamic reuse of rows visible in the viewport area. Developers are required to
+                explicitly use <code>md-virtual-repeat-container</code> as a wrapping parent container.
+            </p>
+
+            <md-virtual-repeat-container id="vertical-container">
+                <div md-virtual-repeat="day in infiniteItems" md-on-demand="" class="repeated-item" flex="">
+                    <div>
+                        <p class="event-text"> Date: {{day.date}}</p>
+                        <p ng-repeat="event in day.events" class="event-text">{{event.displayText}}</p>
+                        <p ng-if="!day.events.length" class="event-text">No events</p>
+                    </div>
+                </div>
+            </md-virtual-repeat-container>
+        </md-content>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-messages.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script>
+    <script src="./rrule-tz.js"></script>
+    <script src="./moment.min.js"></script>
+    <script src="./app.js"></script>
+    </body>
+</html>
