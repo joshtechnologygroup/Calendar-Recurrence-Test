@@ -11,17 +11,137 @@ app.controller('myController', function ($scope, $timeout) {
         new RRule({
             freq: RRule.DAILY,
             interval: 1,
-            dtstart: new Date(Date.UTC(2012, 0, 1, 12, 30)),
+            dtstart: new Date(Date.UTC(2012, 0, 5, 12, 30)),
         }),
         new RRule({
             freq: RRule.DAILY,
             interval: 1,
-            dtstart: new Date(Date.UTC(2012, 0, 1, 14, 30)),
+            dtstart: new Date(Date.UTC(2012, 0, 10, 14, 1)),
         }),
         new RRule({
             freq: RRule.DAILY,
             interval: 1,
-            dtstart: new Date(Date.UTC(2012, 0, 1, 17, 30)),
+            dtstart: new Date(Date.UTC(2012, 0, 15, 17, 30)),
+        }),
+        new RRule({
+            freq: RRule.DAILY,
+            interval: 1,
+            dtstart: new Date(Date.UTC(2012, 0, 20, 17, 2)),
+        }),
+        new RRule({
+            freq: RRule.DAILY,
+            interval: 1,
+            dtstart: new Date(Date.UTC(2012, 0, 25, 17, 3)),
+        }),
+        new RRule({
+            freq: RRule.DAILY,
+            interval: 1,
+            dtstart: new Date(Date.UTC(2012, 0, 30, 17, 4)),
+        }),
+        new RRule({
+            freq: RRule.DAILY,
+            interval: 1,
+            dtstart: new Date(Date.UTC(2012, 1, 1, 10, 5)),
+        }),
+        new RRule({
+            freq: RRule.DAILY,
+            interval: 1,
+            dtstart: new Date(Date.UTC(2012, 1, 5, 12, 6)),
+        }),
+        new RRule({
+            freq: RRule.DAILY,
+            interval: 1,
+            dtstart: new Date(Date.UTC(2012, 1, 10, 14, 7)),
+        }),
+        new RRule({
+            freq: RRule.DAILY,
+            interval: 1,
+            dtstart: new Date(Date.UTC(2012, 1, 15, 17, 8)),
+        }),
+        new RRule({
+            freq: RRule.DAILY,
+            interval: 1,
+            dtstart: new Date(Date.UTC(2012, 1, 20, 17, 9)),
+        }),
+        new RRule({
+            freq: RRule.DAILY,
+            interval: 1,
+            dtstart: new Date(Date.UTC(2012, 1, 25, 17, 10)),
+        }),
+        new RRule({
+            freq: RRule.DAILY,
+            interval: 1,
+            dtstart: new Date(Date.UTC(2012, 1, 30, 17, 11)),
+        }),
+        new RRule({
+            freq: RRule.DAILY,
+            interval: 1,
+            dtstart: new Date(Date.UTC(2012, 2, 1, 10, 12)),
+        }),
+        new RRule({
+            freq: RRule.DAILY,
+            interval: 1,
+            dtstart: new Date(Date.UTC(2012, 2, 5, 12, 13)),
+        }),
+        new RRule({
+            freq: RRule.DAILY,
+            interval: 1,
+            dtstart: new Date(Date.UTC(2012, 2, 10, 14, 14)),
+        }),
+        new RRule({
+            freq: RRule.DAILY,
+            interval: 1,
+            dtstart: new Date(Date.UTC(2012, 2, 15, 17, 15)),
+        }),
+        new RRule({
+            freq: RRule.DAILY,
+            interval: 1,
+            dtstart: new Date(Date.UTC(2012, 2, 20, 17, 16)),
+        }),
+        new RRule({
+            freq: RRule.DAILY,
+            interval: 1,
+            dtstart: new Date(Date.UTC(2012, 2, 25, 17, 17)),
+        }),
+        new RRule({
+            freq: RRule.DAILY,
+            interval: 1,
+            dtstart: new Date(Date.UTC(2012, 2, 30, 17, 18)),
+        }),
+        new RRule({
+            freq: RRule.DAILY,
+            interval: 1,
+            dtstart: new Date(Date.UTC(2012, 3, 1, 10, 19)),
+        }),
+        new RRule({
+            freq: RRule.DAILY,
+            interval: 1,
+            dtstart: new Date(Date.UTC(2012, 3, 5, 12, 20)),
+        }),
+        new RRule({
+            freq: RRule.DAILY,
+            interval: 1,
+            dtstart: new Date(Date.UTC(2012, 3, 10, 14, 21)),
+        }),
+        new RRule({
+            freq: RRule.DAILY,
+            interval: 1,
+            dtstart: new Date(Date.UTC(2012, 3, 15, 17, 22)),
+        }),
+        new RRule({
+            freq: RRule.DAILY,
+            interval: 1,
+            dtstart: new Date(Date.UTC(2012, 3, 20, 17, 23)),
+        }),
+        new RRule({
+            freq: RRule.DAILY,
+            interval: 1,
+            dtstart: new Date(Date.UTC(2012, 3, 25, 17, 24)),
+        }),
+        new RRule({
+            freq: RRule.DAILY,
+            interval: 1,
+            dtstart: new Date(Date.UTC(2012, 3, 30, 17, 25)),
         })
     ];
     const rruleSet = new rrule.RRuleSet();

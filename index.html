@@ -43,7 +43,9 @@
                 <div md-virtual-repeat="day in infiniteItems" md-on-demand="" class="repeated-item" flex="">
                     <div>
                         <p class="event-text"> Date: {{day.date}}</p>
-                        <p ng-repeat="event in day.events" class="event-text">{{event.displayText}}</p>
+                        <div style="width: 90%; overflow-y: scroll; height: 50px">
+                            <p ng-repeat="event in day.events" class="event-text">{{event.displayText}}</p>
+                        </div>
                         <p ng-if="!day.events.length" class="event-text">No events</p>
                     </div>
                 </div>
